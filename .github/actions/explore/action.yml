@@ -10,3 +10,4 @@ runs:
   steps:
     - name: Display Nice Input
       run: echo "Nice Input = ${{ inputs.nice-input }}"
+      shell: bash
