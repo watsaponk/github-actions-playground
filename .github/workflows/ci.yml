@@ -5,6 +5,7 @@ jobs:
     name: "Caller A"
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: "Call Explore Composite"
         uses: ./.github/actions/explore
         with:
@@ -13,6 +14,7 @@ jobs:
     name: "Caller B"
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: "Call Explore Composite"
         uses: ./.github/actions/explore
         with:
