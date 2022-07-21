@@ -1,0 +1,19 @@
+name: GitHub Actions Demo
+on: push
+jobs:
+  caller_a:
+    name: "Caller A"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Call Explore Composite"
+        uses: ./.github/actions/explore
+        with:
+          - nice-input: "I'm A"
+  caller_b:
+    name: "Caller B"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Call Explore Composite"
+        uses: ./.github/actions/explore
+        with:
+          - nice-input: "I'm B"
