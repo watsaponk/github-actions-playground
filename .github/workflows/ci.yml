@@ -8,7 +8,7 @@ jobs:
       - name: "Call Explore Composite"
         uses: ./.github/actions/explore
         with:
-          - nice-input: "I'm A"
+          nice-input: "I'm A"
   caller_b:
     name: "Caller B"
     runs-on: ubuntu-latest
@@ -16,4 +16,4 @@ jobs:
       - name: "Call Explore Composite"
         uses: ./.github/actions/explore
         with:
-          - nice-input: "I'm B"
+          nice-input: "I'm B"
