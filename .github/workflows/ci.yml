@@ -6,8 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: "Call Explore Composite"
-        uses: ./.github/actions/explore
+      - uses: ./.github/actions/explore
         with:
           nice-input: "I'm A"
   caller_b:
@@ -15,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: "Call Explore Composite"
-        uses: ./.github/actions/explore
+      - uses: ./.github/actions/explore
         with:
           nice-input: "I'm B"
